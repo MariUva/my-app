@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LoginDTO } from 'src/app/modelo/login-dto';
 
 @Component({
   selector: 'app-login',
@@ -7,4 +8,16 @@ import { Component } from '@angular/core';
 })
 export class LoginComponent {
 
+  loginDTO: LoginDTO;
+
+  constructor(){
+    
+    this.loginDTO = new LoginDTO();
+  }
+
+
+  public logear(){
+    alert("Se inicio la peticion de registro");
+  }
+  
 }
